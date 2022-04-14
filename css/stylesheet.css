@@ -1,0 +1,299 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body{
+	background: #808080;
+	font-family: 'Montserrat',sans-serif;
+}
+
+
+
+.navigation{
+	background-color: #A9A9A9;
+	height: 59px;
+	font-size: 20px;
+	text-decoration: none;
+
+	animation-name: navigation;
+	animation-duration: 6s;
+	
+}
+
+.navigation ul{
+	list-style: none;
+	margin-top: 0;
+	padding-left: 0;
+	height: 50px;
+	text-align: right;
+}
+
+.navigation li{
+	display: inline-block;
+	padding-right: 30px;
+	padding-left: 30px;
+	line-height: 55px;
+} 
+
+.navigation li.btn{
+    display: none;
+    color: #733b8;
+}
+
+.navigation li.btn:hover{
+	color: #733b8;
+	cursor: pointer;
+}
+
+.navigation a{
+	color: #0733b8;
+	text-decoration: none;
+}
+
+.navigation a:hover{
+	color: white;
+}
+
+.header{
+
+	animation-name: header;
+	animation-duration: 4s;
+	
+}
+
+.header img{
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.header h1{
+	color: #0733b8;
+	font-weight: normal;
+	font-size: 27px;
+}
+
+.header h2{
+	color: #0733b8;
+	font-size: 19px;
+	font-weight: normal;
+	margin-top: 51px;
+	
+}
+
+.header h3{
+	color: #0733b8;
+	font-size: 17px;
+	font-weight: normal;
+	
+}
+
+.header p{
+	color: white;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 23px;
+	text-align: justify;
+}
+
+
+.main{
+	
+	padding: 25px 100px 35px 100px;
+
+}
+
+.main h1{
+	color: #0733b8;
+	font-weight: normal;
+	
+}
+
+.main h2{
+	color: #0733b8;
+	font-size: 19px;
+	font-weight: normal;
+	margin-top: 51px;
+	
+}
+
+.main h3{
+	color: #0733b8;
+	font-size: 17px;
+	font-weight: normal;
+	
+}
+
+.main p{
+	color: white;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 23px;
+	text-align: justify;
+}
+
+
+
+.miniatura{
+	width: 210px;
+	height: 210px;
+	display: inline-block;
+	margin-right: 15px;
+	background-size: contain;
+	overflow: hidden;
+}
+
+.blackbox{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	padding-top: 95px;
+	opacity: 0;
+	transition: 1.5s;
+}
+
+.blackbox:hover{
+    opacity: 0.8;
+    transition: 1.5s;
+}
+
+.blackbox-text{
+	text-align: center;
+}
+
+.blackbox-text p{
+	text-align: center;
+	margin-top: 0;
+	color: white;
+	font-size: 16px;
+}
+
+.contato1{
+    padding: 0 90px 10px 0px;
+	
+}
+
+.contato1 p{
+
+	margin-top: 10px;
+	display: block;
+	font-size: 17px;
+}
+
+.contato1 img{
+	margin-right: 10px;
+	margin-top: 11px;
+	height: 46px;
+	width: 46px;
+	padding-right: 0;
+}
+
+.back-link{
+	margin-top: 0px;
+	padding: 0px;
+}
+
+/* Animações em CSS */
+
+@keyframes navigation{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes header{
+	0% {opacity: 0; transform: translate(0px, 20px)}
+	100% {opacity: 1; transform: translate(0px, 0px)}
+}
+
+
+/* Site responsivo - usando media query */
+
+@media(max-width: 1000px){
+
+	.navigation li{
+        display: none;
+	}
+
+	.navigation li.btn{
+		display: inline-block;
+	}
+
+	 main{
+	    padding: 10px 5% 30px 5%;
+    }
+
+	.header{
+		margin-top: 20px;
+		display: block;
+		width: 100%;
+		height: auto;
+
+	}
+
+	.header img{
+		margin-top: 0;
+		max-width: 80%;
+        margin-right: 0px;
+        margin-left: 0px;
+		/*margin-left: 80px;
+		margin-left: ;*/
+		
+	}
+
+	.header h1{
+		padding-top: 0;
+		font-size: 25px;
+	}
+
+	.header h2{
+		font-size: 17px;
+	}
+
+	.header h3{
+		font-size: 15px;
+	}
+
+	.header p{
+		font-size: 15px;
+		text-align: ;
+	}
+
+	.main p{
+		text-align: left;
+        line-height: 28px;
+	}
+
+    .blackbox{
+    	opacity: 0.6;
+    }
+
+    .blackbox-text p{
+    	text-align: center;
+    }
+    
+	.contato1 p{
+       font-size: 14px;
+      
+    }
+
+    .menujs{
+    	height: auto;
+    }
+
+    .menujs ul{
+        height: auto;
+        text-align: center;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .menujs li{
+    	display: block;
+    	border-bottom: 1px solid white;
+    }
+	
+}
