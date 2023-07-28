@@ -22,7 +22,7 @@
 }
 
 .nav-brand{
-   font-size: 18px;
+   font-size: 1.2rem;
    font-weight: 700;
    margin-bottom: 5px;
 }
@@ -40,5 +40,32 @@
 
 .menu-items li{
     margin: 10px;
-    font-size: 14px;
+    font-size: 1rem;
+}
+
+/* Seção profiler*/
+.profile-container{
+    background-color: #1abc9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    padding: 0 20px 0 20px;
+    border:1px solid #fff;
+}
+
+.profile-img img{
+    margin-top: 30px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.profile-title{
+    margin: 10px 0 5px 0;
+    font-size: 1.7rem;
+}
+
+.profile-description{
+    margin-bottom: 20px;
+    font-size: 1rem;
 }
