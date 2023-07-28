@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:1px solid #fff;
+    
 }
 
 .nav-brand{
@@ -128,3 +128,39 @@ footer{
     color: #fff;
     margin: 7px;
 }
+
+/* Medias */
+@media(min-width: 576px){
+    html{
+        font-size:20px;
+    }
+}
+
+@media(min-width: 768px){
+    html{
+        font-size:22px;
+    }
+
+    .portfolio-item {
+        width: 280px;
+    }
+
+    .nav-container {
+        display: flex;
+    }
+
+    .nav-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-brand {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .menu-items li {
+        font-size: 18px;
+    }
+}
+
