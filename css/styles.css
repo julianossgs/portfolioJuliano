@@ -51,7 +51,7 @@
     align-items: center;
     color:#fff;
     padding: 0 20px 0 20px;
-    border:1px solid #fff;
+   
 }
 
 .profile-img img{
@@ -68,4 +68,42 @@
 .profile-description{
     margin-bottom: 20px;
     font-size: 1rem;
+}
+
+/* Seção portfolio*/
+
+#portfolio{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.portfolio-title{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 30px 0px 15px 0px;
+    color:#2c3e50;
+    text-transform: uppercase;
+}
+
+.portfolio-container{
+   justify-content: center;
+   display:flex;
+   flex-wrap: wrap;
+}
+
+.portfolio-item{
+    border-radius: 10px;
+    width: 290px;
+    max-width: 420px;
+    cursor: pointer;
+    margin: 5px 10px 0px 10px;
+}
+
+.portfolio-subtitle{
+    text-align: center;
+    font-size: 1.2rem;
+    color:#2c3e50;
+    font-weight: 700;
+    padding-bottom: 22px;
 }
